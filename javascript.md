@@ -1,5 +1,7 @@
-###### object
-Is a data structure that allows you to store and organize data and behavior together
+## OOP (Object-Oriented Programming)
+
+### object
+A data structure that stores properties and methods.
 ```javascript
 // Create an object representing a car
 const car = {
@@ -27,14 +29,17 @@ console.log(car.model);          // Output: Corolla
 console.log(car.getDescription()); // Output: 2020 Toyota Corolla
 console.log(car.start());          // Output: Toyota Corolla is starting...
 
-###### class
+### class
+A blueprint for creating objects with shared properties and methods.
 ```javascript
-class myclass () {
-  //code
+// Define a class
+class MyClass {
+    // Method
+    //Properties
 }
 ```
 
-###### method
+### method
 Is a function that is associated with an object. In the context of object-oriented programming (OOP)
 ```javascript
 class myclass () {
@@ -45,7 +50,7 @@ class myclass () {
 }
 ```
 
-###### constructor
+### constructor
 Is a special method used to initialize objects.
 ```javascript
 // Define a class named Person
@@ -66,4 +71,65 @@ const person1 = new Person('Alice');
 
 // Use the describe method
 console.log(person1.describe()); // Output: Hello Alice.
+```
+
+#### Inheritance
+A way to create a new class from an existing class.
+```javascript
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+    speak() {
+        return `${this.name} makes a noise.`;
+    }
+}
+
+class Dog extends Animal {
+    speak() {
+        return `${this.name} barks.`;
+    }
+}
+```
+#### Encapsulation
+Hiding internal details with private properties.
+```javascript
+class BankAccount {
+    #balance;
+    constructor(initialBalance) {
+        this.#balance = initialBalance;
+    }
+    getBalance() {
+        return this.#balance;
+    }
+    deposit(amount) {
+        if (amount > 0) {
+            this.#balance += amount;
+        }
+    }
+}
+```
+#### Static Methods
+Methods that belong to the class, not instances.
+```javascript
+class MathUtils {
+    static add(a, b) {
+        return a + b;
+    }
+}
+```
+#### Getters and Setters
+Special methods to get and set property values.
+```javascript
+class Person {
+    constructor(name) {
+        this._name = name;
+    }
+    get name() {
+        return this._name;
+    }
+    set name(value) {
+        this._name = value;
+    }
+}
 ```
