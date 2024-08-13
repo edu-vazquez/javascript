@@ -15,7 +15,7 @@ switch (fruit) {
 }
 ```
 ## functions
-### function Declaration:
+### function declaration:
 
 ```javascript
 // Function declaration
@@ -25,7 +25,7 @@ function greet(name) {
 // Using the function
 console.log(greet('Alice')); // Output: Hello, Alice!
 ```
-### Function Expression:
+### function expression:
 ```javascript
 // Function expression
 const add = function(a, b) {
@@ -34,7 +34,7 @@ const add = function(a, b) {
 // Using the function
 console.log(add(5, 3)); // Output: 8
 ```
-### Arrow Function:
+### arrow function:
 ```javascript
 // Arrow function, Block Body Syntax
 const multiply = (a, b) => {
@@ -47,7 +47,7 @@ const multiply = (a, b) => a * b;  //implicit return
 console.log(multiply(4, 6)); // Output: 24
 ```
 
-## OOP (Object-Oriented Programming)
+## OOP (object-oriented programming)
 
 ### object
 is a data structure that stores properties and methods. 
